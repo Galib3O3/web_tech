@@ -9,42 +9,39 @@ a{
 
 .container{
     width: 100%;
-    /* padding-left:45%; */
     height: 100vh;
-    background-image: url(images/b.jpg);
-    background-size: cover;
+    background-image: url(images/s.jpg);
+    background-size: fit;
     display: flex;
-    justify-content:center;
+    justify-content:left;
     align-items: center;
 
 }
 
 .login_box{
+    position: absolute;
     background-color:transparent;
     border: 1px solid #fff;
+    left: 20px;
     padding: 50px 20px;
-    width: 600px;
+    width: 450px;
     border-radius: 6%;
     backdrop-filter: blur(5px);
 }
-h1{ font-style: italic;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px
-}
+
 h3{
     font-style: italic;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px
 }
 
 .input_box{
-    width: 90%;
+    width: 60%;
     height: 40px;
     position: relative;
+    left: 50px;
    margin-bottom: 20px;
    border-bottom: 1px solid #fff;
    background-color: transparent;
@@ -58,17 +55,20 @@ h3{
     background-color: transparent;
     outline: none;
     padding: 0 20px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-style: italic; 
+
 }
 
 .input_box label{
+    font-style: italic;
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    font-size: 20px;
-    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
     transition: .4s;
 }
 .icon{
@@ -77,48 +77,31 @@ h3{
     right: 10px;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #fff;
+    color: #000000;
 }
 
-.remember{
-    width: 100%;
+
+.regi{
+    width: 60%;
     display: flex;
-    justify-content: center;
-    color: #fff;
-    margin-bottom: 30px;
-}
-.remember label{
-    margin: 0 5px;
-    font-size: 15px;
-    color: #fff;
-
-}
-.remember a{
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.log{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left:30%;
     margin-bottom: 20px;
 }
-.log button{
-    width: 150px;
+.regi button{
+    width: 110px;
     height: 40px;
     border-radius: 50px;
     outline: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     transition: .4s;
     font-weight: bold;
 }
-.log button:hover{
+.regi button:hover{
     background-color: transparent;
    border: 1px solid #fff;
-   color: #fff;
+   color: #0c6fcd;
    cursor: pointer;
 }
 
@@ -130,17 +113,34 @@ h3{
 }
 .reg p{
     font-size: 18px;
-    color:#fff;
+    color: #000000;
     margin-right: 5px;
 }
-.reg a{
+.reg a:hover{
 
     font-size: 18px;
-    color:#fff;
+    color:#000000;
     font-weight: bold;
 }
 
 .input_box input:focus ~ label,
 .input_box input:valid ~ label{
    top: 0px; 
+}
+
+.hello{
+    position:absolute;
+    width:700px;
+    right: 0px;
+    height: 100%;
+    background-color: rgb(101, 21, 176);
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+.text{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-style: italic;
 }
