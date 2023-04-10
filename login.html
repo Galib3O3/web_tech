@@ -10,34 +10,38 @@
     <title>Login</title>
 </head>
 <body>
-    <form >
+    <form action="homepage.html">
     <div class="container">
         <div class="login_box">
             <h1>Welcome Back</h1>
             <h3>Login</h3>
             <div class="input_box">
-                <input type="email" required>
+                <input id="email" type="email" required>
                 <label for="">Email</label>
+                <p class="em4">Email is not valid or Empty field </p>
                 <ion-icon  class ="icon" name="mail-outline"></ion-icon> 
             </div>
             <div class="input_box">
-                <input type="password" required>
+                <input id="password"type="password" required>
                 <label for="">Password</label>
+                <p class="em6">Password length minimum 12</p>
                 <ion-icon  class ="icon" name="lock-closed-outline"></ion-icon>
             </div>
 
             <div class="remember">
                 <input type="checkbox">
                 <label for="">remember me</label>
-                <a href="#">forget password</a>
+            </div>
+            <div class="forgot">
+                <a href="#">forgot password</a>
             </div>
 
             <div class="log">
             
-                <button type="submit" onclick="">Login</button>
+                <button type="submit" onclick="validates();">Login</button>
             </div>
             <div class="reg">
-                <p>don't have any account</p>
+                <p>don't have any account?</p>
                 <a href="registration.html">registration</a>
             </div>
 
@@ -45,6 +49,7 @@
         </div>
     </form>
     </div>
+    <script type="text/javascript" src="./validation.js"></script>>
  
 </body>
 </html>

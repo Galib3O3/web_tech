@@ -1,146 +1,188 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/s.jpg);
-    background-size: fit;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-
+a {
+  text-decoration: none;
 }
 
-.login_box{
-    position: absolute;
-    background-color:transparent;
-    border: 1px solid #fff;
-    left: 20px;
-    padding: 50px 20px;
-    width: 450px;
-    border-radius: 6%;
-    backdrop-filter: blur(5px);
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/s.jpg);
+  background-size: fit;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-h3{
-    font-style: italic;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px
+.login_box {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #fff;
+  left: 90px;
+  padding: 50px 20px;
+  width: 450px;
+  border-radius: 2%;
+  backdrop-filter: blur(5px);
 }
 
-.input_box{
-    width: 60%;
-    height: 40px;
-    position: relative;
-    left: 50px;
-   margin-bottom: 20px;
-   border-bottom: 1px solid #fff;
-   background-color: transparent;
+h3 {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.input_box input{
-    width: 100%;
-    color: #fff;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    padding: 0 20px;
-    font-size: 15px;
-    font-style: italic; 
-
+.input_box {
+  width: 60%;
+  height: 40px;
+  position: relative;
+  left: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
 }
 
-.input_box label{
-    font-style: italic;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 15px;
-    font-weight: bold;
-    color: #ffffff;
-    transition: .4s;
-}
-.icon{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #000000;
+.input_box input {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0 20px;
+  font-size: 15px;
+  font-style: italic;
 }
 
-
-.regi{
-    width: 60%;
-    display: flex;
-    position: relative;
-    left:30%;
-    margin-bottom: 20px;
+.input_box label {
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: 0.4s;
 }
-.regi button{
-    width: 110px;
-    height: 40px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    transition: .4s;
-    font-weight: bold;
-}
-.regi button:hover{
-    background-color: transparent;
-   border: 1px solid #fff;
-   color: #0c6fcd;
-   cursor: pointer;
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
 }
 
-.reg{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.regi {
+  width: 60%;
+  display: flex;
+  position: relative;
+  left: 30%;
+  margin-bottom: 20px;
 }
-.reg p{
-    font-size: 18px;
-    color: #000000;
-    margin-right: 5px;
+.regi button {
+  width: 110px;
+  height: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  margin-top: 35px;
 }
-.reg a:hover{
+.regi button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #0c6fcd;
+  cursor: pointer;
+}
 
-    font-size: 18px;
-    color:#000000;
-    font-weight: bold;
+.reg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reg p {
+  font-size: 18px;
+  color: #000000;
+  margin-right: 5px;
+}
+.reg a:hover {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
 }
 
 .input_box input:focus ~ label,
-.input_box input:valid ~ label{
-   top: 0px; 
+.input_box input:valid ~ label {
+  top: 0px;
 }
 
-.hello{
-    position:absolute;
-    width:700px;
-    right: 0px;
-    height: 100%;
-    background-color: rgb(101, 21, 176);
-    margin: 0;
-    color: white;
-    padding: 0;
+.hello {
+  position: absolute;
+  width: 700px;
+  right: 0px;
+  height: 100%;
+  background-color: rgb(101, 21, 176);
+  margin: 0;
+  color: white;
+  padding: 0;
 }
 
-.text{
-    margin-top: 30px;
-    margin-left: 30px;
-    font-style: italic;
+.text {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-style: italic;
+}
+.img {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* for validation */
+.em1 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+
+.em2 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+
+.em3 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+.em4 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+.em5 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+.em6 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
+}
+.em7 {
+  display: none;
+  color: red;
+  margin: 10px 0 10px 10px;
 }

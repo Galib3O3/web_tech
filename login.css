@@ -85,7 +85,7 @@ h3{
     display: flex;
     justify-content: center;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .remember label{
     margin: 0 5px;
@@ -132,6 +132,7 @@ h3{
     font-size: 18px;
     color:#fff;
     margin-right: 5px;
+    
 }
 .reg a{
 
@@ -139,8 +140,50 @@ h3{
     color:#fff;
     font-weight: bold;
 }
+.forgot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forgot a {
+    font-size: 10px;
+    color:#fff;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.forgot a:hover{
+    font-size: 12px;
+    color:#5914db;
+    font-weight: bold;
+}
+
+
+.reg a:hover{
+
+    font-size: 20px;
+    color:#057c23;
+    font-weight: bold;
+}
 
 .input_box input:focus ~ label,
 .input_box input:valid ~ label{
    top: 0px; 
 }
+
+
+
+
+.em4 {
+    display: none;
+    color: red;
+    margin: 10px 0 10px 10px;
+  }
+
+  .em6 {
+    display: none;
+    color: red;
+    margin: 10px 0 10px 10px;
+    margin-bottom: 20px;
+  }

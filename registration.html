@@ -8,42 +8,49 @@
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
      <link rel="stylesheet" href="registration.css">
     <title>Registration</title>
+    <!-- <script src="./validation.js" type></script> -->
 </head>
 <body>
-    <form >
+    <form id="form" action="homepage.html" >
     <div class="container">
         <div class="login_box">
             <h3>Registration</h3>
             <div class="input_box">
-                <input type="Name" required>
+                <input  id="fname" type="Name" required>
                 <label for="">Firstname</label>
+                <p class="em1">Please Enter a Valid name</p>
                 <ion-icon class ="icon" name="person-outline"></ion-icon>
             </div>
             <div class="input_box">
-                <input type="Name" required>
+                <input  id="lname" type="Name" required>
                 <label for="">Lastname</label>
+                <p class="em2">Please Enter a Valid name</p>
                 <ion-icon class ="icon" name="person-outline"></ion-icon>
             </div>
             <div class="input_box">
-                <input type="name" required>
+                <input  id="mobile" type="name" required>
                 <label for="">Mobile </label>
+                <p class="em3">Only BD number</p>
                 <ion-icon class ="icon" name="phone-portrait-outline"></ion-icon>
             </div>
             <div class="input_box">
-                <input type="email" required>
+                <input  id="email" type="email" required>
                 <label for="">Email</label>
+                <p class="em4">Only lus mail </p>
                 <ion-icon  class ="icon" name="mail-outline"></ion-icon> 
             </div>
 
             <div class="input_box">
-                <input type="password" required>
+                <input  id="password" type="password" required>
                 <label for="">Password</label>
+                <p class="em6">Password length minimum 10</p>
                 <ion-icon  class ="icon" name="lock-closed-outline"></ion-icon>
             </div>
 
             <div class="input_box">
-                <input type="password" required>
+                <input id="Cpassword" type="password" required>
                 <label for="">Confirm password</label>
+                <p class="em7">Password didn't match</p>
                 <ion-icon  class ="icon" name="lock-closed-outline"></ion-icon>
             </div>
 
@@ -51,7 +58,7 @@
 
             <div class="regi">
             
-                <button type="submit" onclick="">Registration</button>
+                <button type="submit" onclick="validate()">Registration</button>
             </div>
             <div class="reg">
                 <p>Already Have an Accouont?</p>
@@ -62,8 +69,14 @@
     </form>
     <div class="hello">
         <div class="text"><h2>This is a Registration Form</h2></div>
-        <div class="img"></div>
+        <div class="img"> <img src="images/man.jpg" alt="" height="400px" ></div>
     </div>
     </div>
+
+
+<script type="text/javascript" src="./validation.js"></script>>
+
+
+
 </body>
 </html>
